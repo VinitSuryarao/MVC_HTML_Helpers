@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <h2>Inline HTML Helper </h2>
+</head>
+<body>
+    @*This is Helper Creation*@
+    <div>
+
+        @helper MyCustomList(string[] str)
+        {
+            <ul>
+                @foreach (var item in str)
+                {
+                    <li> @item</li>
+                }
+            </ul>
+        }
+    </div>
+
+    @*This is use of Helper*@
+    <div>
+        City List @MyCustomList(new string[] { "Mumbai", "Pune", "Delhi" })
+    </div>
+    <div>
+        Programing List @MyCustomList(new string[] { "C#", "Java", "Python" })
+    </div>
+
+</body>
+</html>

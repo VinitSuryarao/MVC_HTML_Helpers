@@ -1,0 +1,29 @@
+﻿@using HTML_Helpers.Models
+@model ClientModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <title>Templated HTML Helper</title>
+</head>
+<body>
+    <div>
+        <h5> Display</h5>
+        DisplayName :-     @Html.DisplayName("Name"); </br>
+        DisplayNameFor :-  @Html.DisplayNameFor(x => x.City); </br>
+        DisplayText :-     @Html.DisplayText("Name"); </br>
+        DisplayTextFor :-  @Html.DisplayTextFor(x => x.City); </br>
+        Display :-         @Html.Display("Name"); </br>
+        DisplayFor :-      @Html.DisplayFor(x => x.City); </br>
+        DisplayForModel :- @Html.DisplayForModel()
+
+        <h5> Editor</h5>
+        Editor :-        @Html.Editor("Name"); </br>
+        EditorFor :-     @Html.EditorFor(x => x.City); </br>
+        EditorForModel:- @Html.EditorForModel()
+
+    </div>
+</body>
+</html>

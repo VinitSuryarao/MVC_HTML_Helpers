@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h5> Custom Helper With Static Class and Static Method</h5>
+        @CustomHTMLHelper.Image("https://picsum.photos/id/237/200/300", "This is Dog Image");
+    </div>
+
+    <div>
+        <h5> Custom Helper With Extension Method</h5>
+        @Html.Img("https://picsum.photos/id/237/200/300", "This is Dog Image");
+    </div>
+
+    <div>
+        <h5> Custom Helper With Add Attributes to HTMl Tag</h5>
+        @Html.Picture("https://picsum.photos/id/237/200/300", "This is Dog Image");
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿
+@using HTML_Helpers.Models
+@model ClientModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+       
+        @Html.BeginForm("MyForm")
+
+            Name: -@Html.TextBoxFor(x => Model.Name)
+            <br />
+            City: -@Html.TextBoxFor(x => Model.City)
+            <br />
+            Married: -@Html.CheckBoxFor(x => Model.Married)
+
+            <input type="submit" value="Save" />
+
+     
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <h2>Standard Built-In HTML Helper</h2>
+    <h2>Index Controller</h2>
+</head>
+<body>
+
+    <div>
+        @Html.ActionLink("Click Here", "About")
+    </div>
+    <div>
+        @Html.ActionLink("Same Controller Actioin", "About")
+    </div>
+    <div>
+        @Html.ActionLink("Other Controller Actioin", "Index", "InlineHTMLHelper")
+    </div>
+    <div>
+        Text Box :- @Html.TextBox("txtBox1", "Enter Your Name")
+    </div>
+    <div>
+        Check Box :- Male @Html.CheckBox("chkBox1")
+                     Female @Html.CheckBox("chkBox2", true)
+                     Other  @Html.CheckBox("chkBox3", false)
+    </div>
+    <div>
+        Radio Button :- C# @Html.RadioButton("rdoBtn1", "C#", true)
+                        Java @Html.RadioButton("rdoBtn2", "Java", false)
+    </div>
+</body>
+</html>
